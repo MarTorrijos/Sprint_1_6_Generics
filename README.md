@@ -44,6 +44,20 @@ Modifica el apartado anterior de manera que los argumentos del método genérico
 
 <br>
 
+## Nivel 3
+
+<br>
+
+EJERCICIO 1:
+
+Crea una interfaz llamada Teléfono y tres clases: Smartphone, Genérica y Principal.
+
+La interfaz Teléfono debe tener un método llamado llamar(). La clase Smartphone debe implementar Teléfono, y además del método llamar(), también debe tener el método hacerFotos().
+
+La clase Genérica debe tener dos métodos genéricos, el primero debe recibir un tipo de argumento limitado por la interfaz Teléfono y el segundo debe recibir un argumento limitado por la clase Smartphone. Desde estos dos métodos, llama a los métodos correspondientes de Teléfono y Smartphone. En el main() de la clase Principal, pasa un objeto de la clase Smartphone a los dos métodos genéricos de la clase Genérica.
+
+El método limitado por la interfaz Teléfono, de la clase Genérica, puede llamar al método hacerFotos()
+
 ***
 
 

@@ -1,4 +1,4 @@
-package org.example.level_1.exercici_2;
+package org.example.level_2.exercici_2;
 
 public class Person {
 
@@ -16,4 +16,5 @@ public class Person {
     public String toString() {
         return "Person called " + name + " " + surname + ", " + age + " years";
     }
+
 }

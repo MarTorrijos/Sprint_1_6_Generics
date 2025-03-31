@@ -7,20 +7,22 @@ import java.util.List;
 
 public class Main {
 
-    private static List<Person> adults = new ArrayList<>();
-    private static List<Person> kids = new ArrayList<>();
-    private static List<Person> elderly = new ArrayList<>();
+    private static List<Person> persons = new ArrayList<>();
+    private static List<String> objects = new ArrayList<>();
+    private static List<Integer> numbers = new ArrayList<>();
 
     public static void main(String[] args) {
-        adults.add(new Person("Marta", "Hernandez", 54));
-        adults.add(new Person("Carlos", "Fernandez", 24));
+        persons.add(new Person("Marta", "Hernandez", 54));
+        persons.add(new Person("Carlos", "Fernandez", 24));
 
-        kids.add(new Person("Isabel", "Perez", 10));
+        objects.add("Carpet");
+        objects.add("Ball");
 
-        elderly.add(new Person("Eustaquia", "Olivares", 99));
+        numbers.add(99);
+        numbers.add(1);
 
         GenericMethods genericM = new GenericMethods();
-        genericM.genericMethod(adults, kids, elderly);
+        genericM.genericMethod(persons, objects, numbers);
     }
 
 }

@@ -18,7 +18,7 @@ public class Smartphone implements Phone {
 
     @Override
     public String call(int number) {
-        return brand + " calling number " + number;
+        return "Calling number " + number;
     }
 
     @Override

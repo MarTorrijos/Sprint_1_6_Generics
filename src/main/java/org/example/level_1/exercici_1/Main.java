@@ -3,14 +3,15 @@ package org.example.level_1.exercici_1;
 public class Main {
 
     public static void main(String[] args) {
-        NoGenericMethods noGeneric = new NoGenericMethods(3, 5, 6);
 
-        System.out.println("All numbers: " + noGeneric.getNumbers());
+        int num1 = 3;
+        int num2 = 5;
+        int num3 = 6;
 
-        System.out.println("Getting numbers one by one:");
-        System.out.println(noGeneric.getNum1());
-        System.out.println(noGeneric.getNum2());
-        System.out.println(noGeneric.getNum3());
+        System.out.println(new NoGenericMethods(num1, num2, num3));
+        System.out.println(new NoGenericMethods(num2, num3, num1));
+        System.out.println(new NoGenericMethods(num3, num1, num2));
+
     }
 
 }

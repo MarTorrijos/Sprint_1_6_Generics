@@ -1,45 +1,19 @@
 package org.example.level_1.exercici_1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class NoGenericMethods {
 
-    private List<Integer> numbers;
+    private int num1;
+    private int num2;
+    private int num3;
 
     public NoGenericMethods(int num1, int num2, int num3) {
-        numbers = new ArrayList<>();
-        numbers.add(num1);
-        numbers.add(num2);
-        numbers.add(num3);
+        this.num1 = num1;
+        this.num2 = num2;
+        this.num3 = num3;
     }
 
-    public List<Integer> getNumbers() {
-        return numbers;
-    }
-
-    public int getNum1() {
-        return numbers.get(0);
-    }
-
-    public int getNum2() {
-        return numbers.get(1);
-    }
-
-    public int getNum3() {
-        return numbers.get(2);
-    }
-
-    public void setNum1(int num1) {
-        numbers.set(0, num1);
-    }
-
-    public void setNum2(int num2) {
-        numbers.set(1, num2);
-    }
-
-    public void setNum3(int num3) {
-        numbers.set(2, num3);
+    public String toString() {
+        return num1 + ", " + num2 + ", " + num3;
     }
 
 }

@@ -1,28 +1,17 @@
 package org.example.level_2.exercici_2;
 
-import org.example.level_2.exercici_1.Person;
-
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
-    private static List<Person> persons = new ArrayList<>();
-    private static List<String> objects = new ArrayList<>();
-    private static List<Integer> numbers = new ArrayList<>();
-
     public static void main(String[] args) {
-        persons.add(new Person("Marta", "Hernandez", 54));
-        persons.add(new Person("Carlos", "Fernandez", 24));
+        List<?> list1 = Arrays.asList(1, 2, "tres", 4, new Person("Paco", "Paquez", 39));
+        List<?> list2 = Arrays.asList(99.9, 1, "Bon dia");
 
-        objects.add("Carpet");
-        objects.add("Ball");
-
-        numbers.add(99);
-        numbers.add(1);
-
-        GenericMethods genericM = new GenericMethods();
-        genericM.genericMethod(persons, objects, numbers);
+        System.out.println("LISTA 1: " + System.lineSeparator() + list1);
+        System.out.println("------------------------------------------------------");
+        System.out.println("LISTA 2: " + System.lineSeparator() + list2);
     }
 
 }
